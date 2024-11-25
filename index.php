@@ -1,50 +1,6 @@
 <?php
-abstract class Categoria {
-    public $tipo;
 
-    public function __construct($_tipo){
-        $this->tipo = $_tipo;
-    }
-
-    abstract public function getMyCategory();
-}
-
-
-class Attualità extends Categoria{
-
-    public function getMyCategory(){
-        echo $this->tipo;
-    }
-
-}
-
-
-class Sport extends Categoria{
-
-    public function getMyCategory(){
-        echo $this->tipo;
-    }
-
-}
-
-
-class Gossip extends Categoria{
-
-    public function getMyCategory(){
-        echo $this->tipo;
-    }
-
-}
-
-
-class Storia extends Categoria{
-
-    public function getMyCategory(){
-        echo $this->tipo;
-    }
-
-}
-
+require_once('class.php');
 
 class Post{
     public $titolo;
@@ -65,27 +21,5 @@ class Post{
 
 $post1 = new Post("Clima impazzito a causa dei cambiamenti climatici", new Attualità("Attualità"), "La nostra inchiesta: ");
 $post1->printArticle();
-
-
-
-
-
-
-
-
-// $class1 = new Attualità("Attualità \n");
-// var_dump($class1);
-// $class1->getMyCategory();
-
-// $class2 = new Sport("Sport \n");
-// $class2->getMyCategory();
-
-// $class3 = new Gossip("Gossip \n");
-// $class3->getMyCategory();
-
-// $class4 = new Storia("Storia \n");
-// $class4->getMyCategory();
-
-
 
 ?>
