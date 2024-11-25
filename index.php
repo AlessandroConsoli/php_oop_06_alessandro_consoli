@@ -58,7 +58,7 @@ class Post{
     }
 
     public function printArticle(){
-        echo $this->titolo . "\n" . $this->categoria->getMyCategory() . $this->tag . "\n" . "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi sapiente iste fugit expedita maiores reiciendis ipsam voluptate, magnam debitis corporis doloremque cum repudiandae id dolores nisi distinctio, molestiae quibusdam voluptas!";
+        echo $this->titolo . "\n" . $this->categoria->getMyCategory() . "\n" .  $this->tag . "\n" . "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi sapiente iste fugit expedita maiores reiciendis ipsam voluptate, magnam debitis corporis doloremque cum repudiandae id dolores nisi distinctio, molestiae quibusdam voluptas!";
     }
 }
 
