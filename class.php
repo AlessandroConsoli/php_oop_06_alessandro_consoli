@@ -3,7 +3,7 @@ abstract class Categoria {
     public $tipo;
 
     public function __construct($_tipo){
-        $this->tipo = $_tipo;
+        return $this->tipo = $_tipo;
     }
 
     abstract public function getMyCategory();
@@ -13,7 +13,7 @@ abstract class Categoria {
 class Attualità extends Categoria{
 
     public function getMyCategory(){
-        echo $this->tipo;
+        return $this->tipo;
     }
 
 }
@@ -22,7 +22,7 @@ class Attualità extends Categoria{
 class Sport extends Categoria{
 
     public function getMyCategory(){
-        echo $this->tipo;
+        return $this->tipo;
     }
 
 }
@@ -31,7 +31,7 @@ class Sport extends Categoria{
 class Gossip extends Categoria{
 
     public function getMyCategory(){
-        echo $this->tipo;
+        return $this->tipo;
     }
 
 }
@@ -40,7 +40,7 @@ class Gossip extends Categoria{
 class Storia extends Categoria{
 
     public function getMyCategory(){
-        echo $this->tipo;
+        return $this->tipo;
     }
 
 }
