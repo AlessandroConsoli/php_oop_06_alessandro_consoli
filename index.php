@@ -22,4 +22,5 @@ class Post{
 $post1 = new Post("Clima impazzito a causa dei cambiamenti climatici", new Attualità("Attualità"), "La nostra inchiesta: ");
 $post1->printArticle();
 
+
 ?>
